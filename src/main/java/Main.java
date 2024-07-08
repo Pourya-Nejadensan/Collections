@@ -47,5 +47,21 @@ public class Main {
         System.out.println(school.removeStudent(1));
         System.out.println(school);
         System.out.println(school.removeStudent(1));
+
+        // bonus: Course ----------------------------------
+        System.out.println("bonus: Course ----------------------------------");
+        System.out.println(school);
+        List<Course> myCourse = new ArrayList<>();
+        myCourse.add(new Course("Math", "Math", 10));
+        myCourse.add(new Course("Informatik", "Informatik", 20));
+
+        students.get(2).addCourse(myCourse.get(0));
+        students.get(2).addCourse(myCourse.get(1));
+
+        System.out.println(school.getCoursesByStudentId(3));
+        System.out.println(school.getCoursesByStudentId(2));
+
+
+
     }
 }

@@ -7,6 +7,14 @@ public class Student {
     private int studentId;
     private List<Course> course;
 
+    public List<Course> getCourse() {
+        return course;
+    }
+
+    public void setCourse(List<Course> course) {
+        this.course = course;
+    }
+
     public void addCourse(Course course) {
         this.course.add(course);
     }

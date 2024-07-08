@@ -4,6 +4,10 @@ import java.util.List;
 public class School {
     private List<Student> students;
 
+    public List<Course> getCoursesByStudentId(int studentId) {
+        return findStudentById(studentId).getCourse();
+    }
+
     public Student findStudentById(int id) {
         for (Student student : students) {
                 if (student.getStudentId() == id)
