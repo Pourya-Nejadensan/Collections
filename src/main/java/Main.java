@@ -3,6 +3,9 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+
+        // task 1 ----------------------------------
+
         List<Student> students = new ArrayList<Student>();
 
         students.add(new Student("aaa",
@@ -24,5 +27,10 @@ public class Main {
             System.out.println("Last Name : " + student.getLastName());
             System.out.println("---------------------");
         }
+
+        // task 2 ----------------------------------
+
+        System.out.println("// task 2 ----------------------------------");
+
     }
 }
