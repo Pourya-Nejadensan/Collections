@@ -39,5 +39,10 @@ public class Main {
         System.out.println(school);
 
         school.printStudents();
+
+        // task 3 ----------------------------------
+        System.out.println("task 3 ----------------------------------");
+        System.out.println(school.findStudentById(1));
+        System.out.println(school.findStudentById(5));
     }
 }
