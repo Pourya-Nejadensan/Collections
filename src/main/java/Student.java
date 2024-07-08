@@ -3,6 +3,12 @@ public class Student {
     private String lastName;
     private int studentId;
 
+    public Student(String firstName, String lastName, int studentId) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.studentId = studentId;
+    }
+
     public String getFirstName() {
         return firstName;
     }
@@ -25,5 +31,14 @@ public class Student {
 
     public void setStudentId(int studentId) {
         this.studentId = studentId;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "  Student Id= '" + studentId + '\'' +
+                ", First Name= '" + firstName + '\'' +
+                ", Last Name="  + lastName +
+                '}';
     }
 }
