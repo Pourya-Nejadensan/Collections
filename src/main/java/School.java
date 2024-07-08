@@ -4,6 +4,14 @@ import java.util.List;
 public class School {
     private List<Student> students;
 
+    public Student findStudentById(int id) {
+        for (Student student : students) {
+                if (student.getStudentId() == id)
+                    return student;
+        }
+        return null;
+    }
+
     public School() {
         students = new ArrayList<>();
     }
