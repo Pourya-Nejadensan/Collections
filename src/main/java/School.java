@@ -12,6 +12,14 @@ public class School {
         return null;
     }
 
+    public boolean removeStudent(int id) {
+        if (findStudentById(1) != null){
+            students.remove(findStudentById(1));
+            return true;
+        }
+        return false;
+    }
+
     public School() {
         students = new ArrayList<>();
     }

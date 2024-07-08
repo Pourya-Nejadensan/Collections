@@ -44,5 +44,8 @@ public class Main {
         System.out.println("task 3 ----------------------------------");
         System.out.println(school.findStudentById(1));
         System.out.println(school.findStudentById(5));
+        System.out.println(school.removeStudent(1));
+        System.out.println(school);
+        System.out.println(school.removeStudent(1));
     }
 }
