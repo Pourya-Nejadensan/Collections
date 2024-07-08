@@ -32,5 +32,12 @@ public class Main {
 
         System.out.println("// task 2 ----------------------------------");
 
+        School school = new School();
+        for (Student student : students) {
+            school.addStudent(student);
+        }
+        System.out.println(school);
+
+        school.printStudents();
     }
 }

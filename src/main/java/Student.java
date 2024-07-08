@@ -39,6 +39,6 @@ public class Student {
                 "  Student Id= '" + studentId + '\'' +
                 ", First Name= '" + firstName + '\'' +
                 ", Last Name="  + lastName +
-                '}';
+                " }";
     }
 }

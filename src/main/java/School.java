@@ -12,6 +12,12 @@ public class School {
         students.add(student);
     }
 
+    public void printStudents() {
+        for (Student student : students) {
+            System.out.println(student);
+        }
+    }
+
     @Override
     public String toString() {
         return "School{" +
