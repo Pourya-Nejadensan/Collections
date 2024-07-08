@@ -1,12 +1,21 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Student {
     private String firstName;
     private String lastName;
     private int studentId;
+    private List<Course> course;
+
+    public void addCourse(Course course) {
+        this.course.add(course);
+    }
 
     public Student(String firstName, String lastName, int studentId) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.studentId = studentId;
+        this.course = new ArrayList<>();
     }
 
     public String getFirstName() {
